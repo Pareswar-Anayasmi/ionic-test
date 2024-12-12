@@ -1,0 +1,29 @@
+<ion-content class="ion-padding">
+  <!-- Top Bar Section -->
+  <ion-header>
+    <ion-toolbar>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <!-- Logo on the Left -->
+        <div style="display: flex; align-items: center;">
+          <img src="assets/image/anayasmiLogo.png" alt="Logo" style="height: 40px; margin-right: 10px;" />
+        </div>
+
+        <!-- Profile Icon and Logout on the Right -->
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <ion-icon name="person-circle-outline" size="large" style="cursor: pointer;"></ion-icon>
+          <ion-button fill="outline" color="danger" size="small" (click)="logout()">Logout</ion-button>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Welcome Message Section -->
+  <div style="text-align: center; margin-top: 20px;">
+    <h2>Welcome to Anayasmi!</h2>
+    <p>We're glad to have you with us.</p>
+    <ion-button color="medium" size="small" (click)="onGetStarted()">
+      Fill personal Details
+    </ion-button>
+  </div>
+
+</ion-content>
